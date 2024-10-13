@@ -1,0 +1,15 @@
+function notify(title,text,time)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title;
+        Text = text;
+        Duration = time;
+    })
+end
+AutoFarmWarning = false
+    if AutoFarmWarning == false then
+        AutoFarmWarning = true
+        notify('VoidX Warning', 'Execute 2x on solara!', 30)
+    else
+        notify('Loading VoidX', ':D', 5)
+    end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hl3n/voidx/refs/heads/main/x"))()
